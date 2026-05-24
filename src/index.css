@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8f7;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(123, 18, 59, 0.15),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(212, 106, 138, 0.15),
+      transparent 30%
+    ),
+    linear-gradient(180deg, #fff9fa, #fff4f7);
+}
+html {
+  scroll-behavior: smooth;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease;
+}
