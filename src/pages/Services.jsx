@@ -152,8 +152,14 @@ function Services() {
                 <h2 className="text-2xl font-bold mt-6">{section.title}</h2>
 
                 <ul className="mt-6 space-y-4">
-                  {section.items.map((item, idx) => (
-                    <li key={idx}>✓ {item}</li>
+                  {section.services.map((service, idx) => (
+                    <div key={idx} className="border-b border-pink-100 py-4">
+                      <h4 className="font-bold">{service.name}</h4>
+
+                      <p className="text-sm text-gray-500 mt-2">
+                        {service.details}
+                      </p>
+                    </div>
                   ))}
                 </ul>
               </div>
