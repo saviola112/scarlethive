@@ -6,22 +6,21 @@ import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import SocialFloat from "./components/SocialFloat";
 import ScrollToTop from "./components/ScrollToTop";
-import { AnimatePresence } from "framer-motion";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
     <BrowserRouter>
       <SocialFloat />
       <ScrollToTop />
-      <AnimatePresence mode="wait">
-        <Routes>
-          <Route path="*" element={<NotFound />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </AnimatePresence>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </BrowserRouter>
   );
 }
