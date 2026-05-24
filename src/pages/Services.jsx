@@ -6,25 +6,101 @@ function Services() {
     {
       title: "Hair Services",
       emoji: "💇🏽‍♀️",
-      items: [
-        "Braids",
-        "Wig Installation",
-        "Hair Treatment",
-        "Hair Extensions",
-        "Styling",
+      services: [
+        {
+          name: "Braids",
+          details:
+            "Knotless braids, box braids, twists and protective styles tailored to your preference.",
+        },
+
+        {
+          name: "Wig Installation",
+          details:
+            "Professional wig fitting, styling and installation for a natural finish.",
+        },
+
+        {
+          name: "Hair Treatment",
+          details:
+            "Deep conditioning and restorative treatments designed for healthy hair care.",
+        },
+
+        {
+          name: "Hair Extensions",
+          details:
+            "Volume and length enhancement using quality extension techniques.",
+        },
+
+        {
+          name: "Styling",
+          details:
+            "Hair styling for everyday looks, events and special occasions.",
+        },
       ],
     },
 
     {
       title: "Nail Services",
       emoji: "💅🏽",
-      items: ["Manicure", "Pedicure", "Gel Nails", "Nail Art", "Acrylic Nails"],
+      services: [
+        {
+          name: "Manicure",
+          details: "Nail grooming, shaping and polish application.",
+        },
+
+        {
+          name: "Pedicure",
+          details: "Foot care treatment designed for comfort and appearance.",
+        },
+
+        {
+          name: "Gel Nails",
+          details:
+            "Long-lasting glossy nail finish with professional application.",
+        },
+
+        {
+          name: "Nail Art",
+          details: "Creative custom nail designs and decorative styles.",
+        },
+
+        {
+          name: "Acrylic Nails",
+          details:
+            "Durable extensions and enhancements for stylish nail looks.",
+        },
+      ],
     },
 
     {
       title: "Beauty & Wellness",
       emoji: "✨",
-      items: ["Lashes", "Brows", "Spa", "Facials", "Relaxation Treatments"],
+      services: [
+        {
+          name: "Lashes",
+          details: "Enhancement services designed to create fuller lash looks.",
+        },
+
+        {
+          name: "Brows",
+          details: "Brow shaping and styling for a refined appearance.",
+        },
+
+        {
+          name: "Spa",
+          details: "Relaxation treatments focused on comfort and wellness.",
+        },
+
+        {
+          name: "Facials",
+          details: "Skin care treatments designed to refresh and nourish.",
+        },
+
+        {
+          name: "Relaxation Treatments",
+          details: "Beauty experiences focused on self-care and wellbeing.",
+        },
+      ],
     },
   ];
 
@@ -58,8 +134,14 @@ function Services() {
                 <h2 className="text-2xl font-bold mt-6">{section.title}</h2>
 
                 <ul className="mt-6 space-y-4">
-                  {section.items.map((item, idx) => (
-                    <li key={idx}>✓ {item}</li>
+                  {section.services.map((service, idx) => (
+                    <div key={idx} className="mt-5 border-b pb-4">
+                      <h4 className="font-bold">{service.name}</h4>
+
+                      <p className="text-gray-500 text-sm mt-2">
+                        {service.details}
+                      </p>
+                    </div>
                   ))}
                 </ul>
               </div>
