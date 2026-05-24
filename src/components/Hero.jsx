@@ -46,7 +46,7 @@ function Hero() {
           </p>
 
           <h1 className="text-white text-5xl sm:text-6xl md:text-7xl font-bold mt-5 leading-tight">
-            s Beauty Made Personal
+            Beauty Made Personal
           </h1>
 
           <p className="text-white/90 mt-6 text-lg sm:text-xl">
