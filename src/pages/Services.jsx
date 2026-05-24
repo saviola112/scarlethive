@@ -8,33 +8,39 @@ function Services() {
       emoji: "💇🏽‍♀️",
       services: [
         {
-          name: "Braids",
+          name: "Braids & Protective Styles",
           details:
-            "Knotless braids, box braids, twists and protective styles tailored to your preference.",
+            "Knotless braids, box braids, twists, cornrows and customized protective styles.",
         },
 
         {
           name: "Wig Installation",
           details:
-            "Professional wig fitting, styling and installation for a natural finish.",
+            "Professional installation, fitting and styling for a seamless natural finish.",
         },
 
         {
-          name: "Hair Treatment",
+          name: "Hair Treatments",
           details:
-            "Deep conditioning and restorative treatments designed for healthy hair care.",
+            "Deep conditioning, moisture restoration and strengthening treatments.",
         },
 
         {
           name: "Hair Extensions",
           details:
-            "Volume and length enhancement using quality extension techniques.",
+            "Length and volume enhancement with professionally applied extensions.",
         },
 
         {
-          name: "Styling",
+          name: "Hair Styling",
           details:
-            "Hair styling for everyday looks, events and special occasions.",
+            "Daily styling, event styling and special occasion hair looks.",
+        },
+
+        {
+          name: "Hair Wash & Maintenance",
+          details:
+            "Scalp care, washing, conditioning and maintenance services.",
         },
       ],
     },
@@ -45,29 +51,33 @@ function Services() {
       services: [
         {
           name: "Manicure",
-          details: "Nail grooming, shaping and polish application.",
+          details: "Nail shaping, grooming and polish application.",
         },
 
         {
           name: "Pedicure",
-          details: "Foot care treatment designed for comfort and appearance.",
+          details: "Foot care treatments focused on relaxation and appearance.",
+        },
+
+        {
+          name: "Acrylic Nails",
+          details: "Durable nail extensions with customizable styles.",
         },
 
         {
           name: "Gel Nails",
           details:
-            "Long-lasting glossy nail finish with professional application.",
+            "Glossy long-lasting nail finish with professional application.",
         },
 
         {
           name: "Nail Art",
-          details: "Creative custom nail designs and decorative styles.",
+          details: "Creative custom nail designs and beauty detailing.",
         },
 
         {
-          name: "Acrylic Nails",
-          details:
-            "Durable extensions and enhancements for stylish nail looks.",
+          name: "Nail Maintenance",
+          details: "Refills, reshaping and care for healthy-looking nails.",
         },
       ],
     },
@@ -78,27 +88,35 @@ function Services() {
       services: [
         {
           name: "Lashes",
-          details: "Enhancement services designed to create fuller lash looks.",
+          details: "Lash enhancement and styling for fuller looks.",
         },
 
         {
           name: "Brows",
-          details: "Brow shaping and styling for a refined appearance.",
-        },
-
-        {
-          name: "Spa",
-          details: "Relaxation treatments focused on comfort and wellness.",
+          details: "Brow shaping and beauty styling.",
         },
 
         {
           name: "Facials",
-          details: "Skin care treatments designed to refresh and nourish.",
+          details:
+            "Skin care treatments designed to refresh and nourish the skin.",
         },
 
         {
-          name: "Relaxation Treatments",
-          details: "Beauty experiences focused on self-care and wellbeing.",
+          name: "Spa Experience",
+          details:
+            "Relaxation treatments designed around comfort and wellness.",
+        },
+
+        {
+          name: "Massage & Relaxation",
+          details:
+            "Self-care experiences focused on relaxation and rejuvenation.",
+        },
+
+        {
+          name: "Beauty Consultation",
+          details: "Personalized guidance for your preferred beauty goals.",
         },
       ],
     },
@@ -134,14 +152,8 @@ function Services() {
                 <h2 className="text-2xl font-bold mt-6">{section.title}</h2>
 
                 <ul className="mt-6 space-y-4">
-                  {section.services.map((service, idx) => (
-                    <div key={idx} className="mt-5 border-b pb-4">
-                      <h4 className="font-bold">{service.name}</h4>
-
-                      <p className="text-gray-500 text-sm mt-2">
-                        {service.details}
-                      </p>
-                    </div>
+                  {section.items.map((item, idx) => (
+                    <li key={idx}>✓ {item}</li>
                   ))}
                 </ul>
               </div>
