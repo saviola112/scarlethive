@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import WhyChoose from "../components/WhyChoose";
 import BeautySlider from "../components/BeautySlider";
 import OurProcess from "../components/OurProcess";
+import Faq from "../components/Faq";
 
 function Home() {
   return (
@@ -24,6 +25,8 @@ function Home() {
       <BeautySlider />
 
       <BookingCTA />
+
+      <Faq />
 
       <Footer />
     </div>
