@@ -135,13 +135,13 @@ function Services() {
               Beauty Services Designed Around You
             </h1>
 
-            <p className="text-gray-500 mt-5 max-w-2xl mx-auto">
+            <p className="text-gray-500 mt-4 text-base md:text-lg">
               Discover beauty services created to help you feel confident and
               refreshed.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mt-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
             {sections.map((section, index) => (
               <div
                 key={index}

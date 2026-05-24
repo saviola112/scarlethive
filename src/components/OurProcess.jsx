@@ -45,7 +45,7 @@ function OurProcess() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8 mt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
           {steps.map((step, index) => (
             <motion.div
               key={index}
