@@ -58,7 +58,7 @@ function Faq() {
         <div className="text-center">
           <p className="uppercase tracking-[5px] text-[#7b123b]">FAQ</p>
 
-          <h2 className="text-5xl font-bold mt-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4">
             Frequently Asked Questions
           </h2>
 

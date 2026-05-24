@@ -45,11 +45,11 @@ function Hero() {
             Hair • Nails • Spa • Wellness
           </p>
 
-          <h1 className="text-white text-5xl md:text-7xl font-bold mt-5 leading-tight">
-            Beauty Made Personal
+          <h1 className="text-white text-4xl sm:text-5xl md:text-7xl font-bold mt-5 leading-tight">
+            s Beauty Made Personal
           </h1>
 
-          <p className="text-white/90 mt-6 text-lg">
+          <p className="text-white/90 mt-6 text-base sm:text-lg">
             Professional beauty experiences designed around you.
           </p>
 

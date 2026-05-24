@@ -2,7 +2,7 @@ function BookingCTA() {
   return (
     <section className="py-20 px-6 bg-[#7b123b] text-center">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-white text-4xl md:text-6xl font-bold leading-tight">
+        <h2 className="text-white text-3xl sm:text-4xl md:text-6xl font-bold">
           Ready For Your Beauty Experience?
         </h2>
 
