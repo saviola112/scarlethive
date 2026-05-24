@@ -36,7 +36,7 @@ function OurProcess() {
         <div className="text-center">
           <p className="uppercase tracking-[5px] text-[#7b123b]">Our Process</p>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-4">
             How Scarlethive Works
           </h2>
 
@@ -55,13 +55,13 @@ function OurProcess() {
               viewport={{ once: true }}
               className="bg-[#fff8f7] rounded-[30px] p-8 shadow-xl hover:-translate-y-4 hover:shadow-2xl transition-all duration-500"
             >
-              <div className="text-4xl sm:text-5xl font-black text-[#7b123b]">
+              <div className="text-5xl sm:text-5xl font-black text-[#7b123b]">
                 {step.number}
               </div>
 
               <h3 className="text-2xl font-bold mt-6">{step.title}</h3>
 
-              <p className="mt-4 text-gray-500">{step.description}</p>
+              <p className="mt-4 text-gray-500 text-lg">{step.description}</p>
             </motion.div>
           ))}
         </div>

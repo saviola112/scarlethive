@@ -48,11 +48,11 @@ function ServicesPreview() {
             Our Services
           </p>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-5">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-5">
             Beauty Designed Around You
           </h2>
 
-          <p className="text-gray-500 mt-4">
+          <p className="text-gray-500 mt-4 text-lg">
             Treatments and experiences designed to help you feel your best.
           </p>
         </div>

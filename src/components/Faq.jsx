@@ -58,7 +58,7 @@ function Faq() {
         <div className="text-center">
           <p className="uppercase tracking-[5px] text-[#7b123b]">FAQ</p>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-4">
             Frequently Asked Questions
           </h2>
 
@@ -85,7 +85,7 @@ function Faq() {
               </div>
 
               {openIndex === index && (
-                <p className="mt-5 text-gray-500">{faq.answer}</p>
+                <p className="mt-5 text-gray-500 text-lg">{faq.answer}</p>
               )}
             </div>
           ))}

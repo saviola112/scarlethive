@@ -2,11 +2,11 @@ function BookingCTA() {
   return (
     <section className="py-20 px-6 bg-[#7b123b] text-center">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-white text-3xl sm:text-4xl md:text-6xl font-bold">
+        <h2 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold">
           Ready For Your Beauty Experience?
         </h2>
 
-        <p className="text-white/90 mt-6 text-lg md:text-xl max-w-3xl mx-auto">
+        <p className="text-white/90 mt-6 text-x1 md:text-xl max-w-3xl mx-auto">
           Book your appointment and enjoy personalized beauty services designed
           around you.
         </p>
